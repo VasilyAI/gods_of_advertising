@@ -3,7 +3,16 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 2560px)
+	main
+		background: #121314 url(../img/large-head-bg.jpg) 0 0
+		background-repeat: no-repeat
+/**/
+
 @media only screen and (max-width : 1920px)
+	main
+		background: #121314 url(../img/head-bg.jpg) 0 0
+		background-repeat: no-repeat
    /**/
 
 @media only screen and (max-width : 1680px)
@@ -22,15 +31,28 @@
 	/**/
 
 @media only screen and (max-width : 1199px)
+	main
+		background: #121314 url(../img/head-bg.jpg) -215px 0
+		background-repeat: no-repeat
+
+	.payment img
+		margin-right: 18px
+		margin-bottom: 26px
    /**/
 
 @media only screen and (max-width : 1024px)
+	main
+		background: #121314 url(../img/head-bg.jpg) -446px 0
+		background-repeat: no-repeat
    /**/
 
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	main
+		background: #121314 url(../img/head-bg.jpg) -312px 0
+		background-repeat: no-repeat
 	/**/
 
 @media only screen and (max-width : 991px)
@@ -40,9 +62,52 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	main
+		background: #121314 url(../img/tablet-head-bg.jpg) -258px 0
+		background-repeat: no-repeat
+
+	#promo .-promo::before
+		background: none
+
+	#promo .-promo:after
+		background: none
 	/**/
 
 @media only screen and (max-width : 767px)
+	.item-content
+		max-width: 100%
+		text-align: center
+		margin-bottom: 20px
+
+	.item-content .-subtitle
+		text-align: center
+
+	#item
+		padding-bottom: 60px
+
+	#footer
+		padding-top: 60px
+		padding-bottom: 60px
+
+	.footer-content
+		margin-bottom: 30px
+		text-align: center
+
+	.certificate
+		max-width: 100%
+
+	.info
+		max-width: 100%
+		text-align: center
+
+	.footer-icon
+		text-align: center
+		margin-top: 12px
+
+	.vk-link
+		margin-top: 36px
+
+
    /**/
 
 @media only screen and (max-width : 640px)
@@ -52,14 +117,67 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	main
+		background: #121314 url(../img/tablet-head-bg.jpg) -581px 0
+		background-repeat: no-repeat
+
+	#promo
+		padding-top: 60px
+		padding-bottom: 100px
+
+	.title.-subtitle
+		font-size: 7vmin
+
+	.title.-promo
+		font-size: 10vmin
+
+	.-big.link, .text.-big
+		font-size: 4vmin
+
+	#promo .--small
+		font-size: 6vmin
+
+	.title
+		font-size: 9vmin
+
+	.link, .text
+		font-size: 3.7vmin
+
+	.-small.link, .text.-small
+		font-size: 3.4vmin
    /**/
 
 @media only screen and (max-width : 425px)
    /**/
 
 @media only screen and (max-width : 375px)
+	#promo .--small
+		font-size: 7vmin
+
+	.link, .text
+		font-size: 4.6vmin
+
+	.title.-subtitle
+		font-size: 9vmin
+
+	.title.--subtitle-uprc
+		font-size: 7vmin
+
+	.-small.link, .text.-small
+		font-size: 4.4vmin
    /**/
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
+	.-big.link, .text.-big
+		font-size: 5vmin
+
+	.title.-subtitle
+		font-size: 7vmin
+
+	.link, .text
+		font-size: 5.6vmin
+
+	.-small.link, .text.-small
+		font-size: 4.7vmin
 	/**/
