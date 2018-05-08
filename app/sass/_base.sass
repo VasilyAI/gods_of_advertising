@@ -82,73 +82,88 @@ ol
 // TYPOGRAPHY =================================================/
 // ============================================================/
 .text
-	font-size: 17px
+	font-size: 16px
 	line-height: 24px
 	font-family: $default-font
 	color: $font-color
-	&.-thesis
-		font-size: 18px
-	&.-subtitle
-		font-size: 24px
-		line-height: 29px
-		font-weight: bold
-		color: $dark
+	font-weight: 300
+	&.-big
+		font-size: 19px
+		line-height: 26px
+		font-weight: 400
+		color: $white
+		letter-spacing: 1.4px
+	&.-small
+		font-size: 14px
+		line-height: 26px
+		font-weight: 400
+		color: $grey
+		letter-spacing: 1.4px
 	&.--white
 		color: $white
 
 .title
 	font-family: $font-title
 	font-size: 40px
-	line-height: 49px
-	color: $dark
-	font-weight: 700
+	line-height: 100%
+	color: $white
+	font-weight: bold
 	text-transform: uppercase
 	&.-promo
-		font-size: 54px
-		line-height: 54px
-		font-weight: 900
-	&.--white
-		color: $white
+		font-size: 78px
+	&.-subtitle
+		font-size: 30px
+		letter-spacing: 0.2px
+		text-transform: capitalize
+		font-weight: 400
+	&.--subtitle-uprc
+		letter-spacing: 1.4px
+		text-transform: uppercase
+	&.--small
+		font-size: 20px
+		letter-spacing: 0.2px
+	&.--uprc
+		text-transform: uppercase
 
 // LINKS ======================================================/
 // ============================================================/
 .link
 	@extend .text
-	color: $sea
+	font-size: 14px
+	letter-spacing: 1.4px
+	color: $white
+	font-weight: 400
 	text-decoration: underline
-	&.-uprc
-		font-size: 18px
-		line-height: 28px
-		text-transform: uppercase
-	&.-medium
-		font-size: 18px
-	&.--white
-		color: $white
-	&.--dark
-		color: $font-color
+	text-decoration-color: #4a4748
+	transition: all 0.3s ease
+	&:hover
+		color: $red
+		text-decoration-color: $red
 
 // BUTTONS ====================================================/
 // ============================================================/
 .btn
 	display: inline-block
-	font-family: $default-font
+	font-family: $font-title
 	font-size: 18px
 	color: $white
 	text-transform: uppercase
 	text-align: center
 	line-height: 100%
+	letter-spacing: 1.8px
 	padding:
-		top: 18px
-		right: 44px
-		left: 44px
-	height: 54px
-	background-color: $red
+		top: 28px
+		right: 24px
+		left: 24px
+	height: 67px
+	width: 219px
+	background: url("../img/btn-border.png")
+	background-repeat: no-repeat
 	transition: all 0.3s ease
 	text-decoration: none
 	&:hover
-		background-color: $cian
 		text-decoration: none
-		color: $white
+		color: $red
 	&:focus
 		color: $white
 		outline: none

@@ -1,71 +1,124 @@
 @import "base"
 
-// HEAD =====================================================
+main
+	background: $dark url("../img/head-bg.jpg") 0 0
+	background-repeat: no-repeat
+// PROMO ====================================================
+#promo
+	text-align: center
+	padding:
+		top: 160px
+		bottom: 160px
+	.-promo
+		position: relative
+		max-width: 700px
+		margin: 0 auto
+		margin:
+			top: 47px
+			bottom: 22px
+	.-promo::before
+		position: absolute
+		content: ''
+		background: url("../img/brench-left.png")
+		background-repeat: no-repeat
+		top: -50px
+		left: -85px
+		width: 150px
+		height: 240px
+	.-promo:after
+		position: absolute
+		content: ''
+		background: url("../img/brench-right.png")
+		background-repeat: no-repeat
+		top: -50px
+		right: -85px
+		width: 150px
+		height: 240px
+	.-big
+		max-width: 575px
+		margin: 0 auto
+		margin-bottom: 54px
+	.--small
+		background: url("../img/date-bg.png")
+		background-repeat: no-repeat
+		width: 262px
+		height: 68px
+		padding-top: 26px
+		margin: 0 auto
 
+.stars
+	margin-bottom: 41px
+
+.mouse
+	margin-top: 50px
 //===========================================================/
 
 
-// COMFORT ==================================================
+// ITEMS ====================================================
+#item
+	padding:
+		bottom: 142px
+.title
+	text-align: center
 
-//===========================================================/
-
-
-// REVIEW-ONE ===============================================
-
-//===========================================================/
-
-
-// THISIS ===================================================
-
-//===========================================================/
-
-
-// PAY ======================================================
-
-//===========================================================/
-
-
-// DEAL =====================================================
-
-//===========================================================/
-
-
-// STRUCTURE ================================================
-
-//===========================================================/
-
-
-// STRATEGY =================================================
-
-//===========================================================/
-
-
-// GALLERY ==================================================
-
-//===========================================================/
-
-
-// FACT =====================================================
-
-//===========================================================/
-
-
-// DOCUMENTS ================================================
-
-//===========================================================/
-
-
-// REVIEW-TWO ===============================================
-
-//===========================================================/
-
-
-// MAP ======================================================
+.item-content
+	max-width: 330px
+	margin-top: 64px
+	.-subtitle
+		text-align: left
+		margin:
+			top: 32px
+			bottom: 18px
+	.btn
+		margin-top: 37px
 
 //===========================================================/
 
 
 //FOOTER=====================================================
+#footer
+	background-color: $black
+	padding:
+		top: 96px
+		bottom: 96px
+
+.certificate
+	max-width: 320px
+	margin-bottom: 25px
+	p
+		margin: 0
+.info
+	max-width: 276px
+	p
+		margin: 0
+
+.payment
+	img
+		margin:
+			right: 35px
+			bottom: 33px
+
+.footer-info
+	margin-top: 2px
+
+.footer-icon
+	margin-top: 44px
+
+.vk-link
+	margin-top: 15px
+	.link
+		position: relative
+		padding-left: 50px
+	.link::before
+		position: absolute
+		display: inline-block
+		content: ''
+		background: url("../img/vk-social-logotype.png")
+		background-repeat: no-repeat
+		width: 39px
+		height: 23px
+		top: -3px
+		left: 0
 
 //===========================================================/
  
