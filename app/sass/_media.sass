@@ -35,6 +35,9 @@
 		background: #121314 url(../img/head-bg.jpg) -215px 0
 		background-repeat: no-repeat
 
+	#items
+		padding-bottom: 40px
+
 	.payment img
 		margin-right: 18px
 		margin-bottom: 26px
@@ -66,28 +69,23 @@
 		background: #121314 url(../img/tablet-head-bg.jpg) -258px 0
 		background-repeat: no-repeat
 
-	#promo .-promo::before
+	#promo .title.-promo::before
 		background: none
 
-	#promo .-promo:after
+	#promo .title.-promo::after
 		background: none
-	/**/
 
-@media only screen and (max-width : 767px)
-	.item-content
+	.items-content
 		max-width: 100%
 		text-align: center
 		margin-bottom: 20px
 
-	.item-content .-subtitle
+	#items .title.-subtitle
 		text-align: center
 
-	#item
-		padding-bottom: 60px
-
 	#footer
-		padding-top: 60px
-		padding-bottom: 60px
+		padding-top: 20px
+		padding-bottom: 50px
 
 	.footer-content
 		margin-bottom: 30px
@@ -106,8 +104,9 @@
 
 	.vk-link
 		margin-top: 36px
+	/**/
 
-
+@media only screen and (max-width : 767px)
    /**/
 
 @media only screen and (max-width : 640px)
@@ -125,25 +124,31 @@
 		padding-top: 60px
 		padding-bottom: 100px
 
-	.title.-subtitle
+	#promo .title.-subtitle.--uprc
 		font-size: 7vmin
 
-	.title.-promo
+	#promo .title.-promo
 		font-size: 10vmin
 
-	.-big.link, .text.-big
+	#promo .text.-big
 		font-size: 4vmin
 
-	#promo .--small
+	#promo .title.--small
 		font-size: 6vmin
 
-	.title
+	#items .title
 		font-size: 9vmin
 
-	.link, .text
+	.items-content .text
 		font-size: 3.7vmin
 
-	.-small.link, .text.-small
+	.footer-content .text
+		font-size: 3.7vmin
+
+	.footer-info .link
+		font-size: 3.4vmin
+
+	.vk-link .link
 		font-size: 3.4vmin
    /**/
 
@@ -151,33 +156,53 @@
    /**/
 
 @media only screen and (max-width : 375px)
-	#promo .--small
+	#promo .title.-subtitle.--subtitle-uprc
 		font-size: 7vmin
 
-	.link, .text
+	#promo .title.--small
+		font-size: 7vmin
+
+	#promo .text.-big
 		font-size: 4.6vmin
 
-	.title.-subtitle
+	#items .title .-subtitle
 		font-size: 9vmin
 
-	.title.--subtitle-uprc
-		font-size: 7vmin
+	#items .text
+		font-size: 4.7vmin
 
-	.-small.link, .text.-small
+	#footer .text.-small
+		font-size: 4vmin
+
+	.footer-info .link
 		font-size: 4.4vmin
-   /**/
+
+	.vk-link .link
+		font-size: 4.4vmin
+/**/
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	.-big.link, .text.-big
+	main
+		background: #121314 url(../img/small-head-bg.jpg) -300px 0
+		background-repeat: no-repeat
+
+	#promo
+		padding-top: 30px
+
+	#promo .text.-big
+		margin-bottom: 20px
 		font-size: 5vmin
 
-	.title.-subtitle
-		font-size: 7vmin
+	#items .title.-subtitle
+		font-size: 10vmin
 
-	.link, .text
-		font-size: 5.6vmin
+	#items .text
+		font-size: 5vmin
 
-	.-small.link, .text.-small
-		font-size: 4.7vmin
+	#footer .text.-small
+		font-size: 4.4vmin
+
+	.footer-info .link
+		font-size: 4.3vmin
 	/**/
