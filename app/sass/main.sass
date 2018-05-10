@@ -48,6 +48,16 @@ main
 
 .mouse
 	margin-top: 50px
+	animation: mouseUp 1s infinite
+	@keyframes mouseUp
+		0%
+			transform: translate(0px, 0px)
+			animation-timing-function: ease-in
+		50%
+			transform: translate(0px, 15px)
+			animation-timing-function: ease-out
+		100%
+			transform: translate(0px, 0px)
 //===========================================================/
 
 
