@@ -71,11 +71,16 @@
 
 	.items-content
 		max-width: 100%
-		text-align: center
+		padding:
+			right: 70px
+			left: 70px
 		margin-bottom: 20px
 
-	#items .title.-subtitle
-		text-align: center
+	.items-content .list
+		border-bottom: none
+
+	.items-content .text.-price
+		margin-top: 40px
 
 	#footer
 		padding-top: 20px
@@ -104,8 +109,11 @@
    /**/
 
 @media only screen and (max-width : 640px)
+	.items-content
+		padding:
+			right: 50px
+			left: 50px
    /**/
-
 
 
 /* Extra Small Devices, Phones */
@@ -132,8 +140,17 @@
 	#items .title
 		font-size: 9vmin
 
-	.items-content .text
+	.items-content
+		padding: 0
+
+	.items-content .list
 		font-size: 3.7vmin
+
+	.items-content .list li
+		margin-bottom: 10px
+
+	.items-content .text.-price
+		font-size: 5vmin
 
 	.footer-content .text
 		font-size: 3.7vmin
@@ -146,6 +163,8 @@
    /**/
 
 @media only screen and (max-width : 425px)
+	.items-content .text.-price
+		font-size: 6vmin
    /**/
 
 @media only screen and (max-width : 375px)
@@ -161,8 +180,14 @@
 	#items .title.-subtitle
 		font-size: 9vmin
 
-	#items .text
+	.items-content .list
 		font-size: 4.7vmin
+
+	.items-content .list li
+		margin-bottom: 6px
+
+	.items-content .text.-price
+		font-size: 6vmin
 
 	#footer .text.-small
 		font-size: 4vmin
@@ -186,11 +211,20 @@
 		margin-bottom: 20px
 		font-size: 5vmin
 
+	#items
+		padding-bottom: 16px
+
 	#items .title.-subtitle
 		font-size: 10vmin
 
-	#items .text
+	.items-content
+		margin-top: 40px
+
+	.items-content .list
 		font-size: 5vmin
+
+	.items-content .list li
+		margin-bottom: 5px
 
 	#footer .text.-small
 		font-size: 4.4vmin

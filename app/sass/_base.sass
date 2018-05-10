@@ -83,7 +83,7 @@ ol
 // ============================================================/
 .text
 	font-size: 16px
-	line-height: 24px
+	line-height: 22px
 	font-family: $default-font
 	color: $font-color
 	font-weight: 300
@@ -99,6 +99,10 @@ ol
 		font-weight: 400
 		color: $grey
 		letter-spacing: 1.4px
+	&.-price
+		font-size: 24px
+		line-height: 20px
+		font-weight: 400
 	&.--white
 		color: $white
 
@@ -139,6 +143,34 @@ ol
 	&:hover
 		color: $red
 		text-decoration-color: $red
+
+// LISTS ======================================================/
+// ============================================================/
+.list
+	border-bottom: 1px solid $light-grey
+	li
+		@extend .text
+		position: relative
+		list-style-type: none
+		padding-left: 20px
+		margin-bottom: 14px
+		&:last-child
+			margin-bottom: 26px
+		&::before
+			display: inline-block
+			position: absolute
+			content: ''
+			top: 8px
+			left: 0
+			width: 6px
+			height: 6px
+			background-color: $red
+			border-radius: 100%
+		&.--white
+			color: $white
+	&.-white
+		li
+			color: $white
 
 // BUTTONS ====================================================/
 // ============================================================/
