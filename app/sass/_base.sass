@@ -112,13 +112,11 @@ ol
 	line-height: 100%
 	color: $white
 	font-weight: bold
-	text-transform: uppercase
 	&.-promo
 		font-size: 78px
 	&.-subtitle
 		font-size: 30px
 		letter-spacing: 0.2px
-		text-transform: capitalize
 		font-weight: 400
 	&.--enlarged
 		letter-spacing: 1.4px
@@ -135,13 +133,13 @@ ol
 	@extend .text
 	font-size: 14px
 	letter-spacing: 1.4px
-	color: $white
+	color: $accent
 	font-weight: 400
 	text-decoration: underline
 	text-decoration-color: $liver
 	transition: all 0.3s ease
 	&:hover
-		color: $red
+		color: $action_color
 		text-decoration-color: $red
 
 // LISTS ======================================================/
@@ -178,7 +176,7 @@ ol
 	display: inline-block
 	font-family: $font-title
 	font-size: 18px
-	color: $white
+	color: $accent
 	text-transform: uppercase
 	text-align: center
 	line-height: 100%
@@ -194,7 +192,7 @@ ol
 	text-decoration: none
 	&:hover
 		text-decoration: none
-		color: $red
+		color: $action_color
 		animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both
 		transform: translate3d(0, 0, 0)
 		backface-visibility: hidden
@@ -204,9 +202,9 @@ ol
 			20%, 80%
 				transform: translate3d(2px, 0, 0)
 			30%, 50%, 70%
-				transform: translate3d(-4px, 0, 0)
+				transform: translate3d(-4px, -1px, 0)
 			40%, 60%
-				transform: translate3d(4px, 0, 0)
+				transform: translate3d(4px, 1px, 0)
 	&:focus
 		color: $white
 		outline: none
